@@ -1,0 +1,11 @@
+<h1>Articles (<%= @articles.count  %>)</h1>
+<div class="container">
+  <h2>
+    <% @articles.each do |article| %>
+      <br>
+      <%= link_to "#{article.title}", article_path(article) %>
+      <br>
+    <% end %>
+  </h2>
+</div>
+

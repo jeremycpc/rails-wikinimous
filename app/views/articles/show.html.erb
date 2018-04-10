@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<img src="http://placehold.it" style="width:320px; height:150px" alt="">
+<p><%= @article.content %></p>
+<p><%= link_to "Edit", edit_path(@article) %></p>
+<p><%= link_to "Delete", article_path, method: :delete, data: { confirm: "Are you sure?" } %></p>
+<p><%= link_to "Back home", articles_path %></p>
